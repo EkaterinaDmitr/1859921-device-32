@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Екатерина Лозбенева](https://up.htmlacademy.ru/htmlcss/32/user/1859921).
-* Наставник: `Лиза Пак`.
+* Наставник: `Лиза Пак` https://htmlacademy.ru/profile/lizzy
 
 ---
 
