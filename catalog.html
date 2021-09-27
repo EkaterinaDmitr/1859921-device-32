@@ -15,7 +15,7 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <span class="visually-hidden"> Поиск </span>
-              <a class="navigation-link" href=#>Поиск по сайту</a>
+              <input type="submit" value="Поиск по сайту">
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href=#>Войти</a>
@@ -56,6 +56,7 @@
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
                 </li>
+                <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Моноподы для селфи</a>
                 </li>
               </ul>
@@ -66,12 +67,16 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
+                <div>
                 <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
+                </div>
+                <div>
                   <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
+                </div>
                   <label class="catalog-filter-label">
                     от <input class="catalog-filter-input" type="number" name="min-price"> ₽
                   </label>
@@ -145,13 +150,11 @@
               <button class="button" type="submit">Показать</button>
             </form>
           </section>
-
+          <section class="sorting">
           <form class="sorting-type">
             <h2>Сортировка</h2>
             <select class="select-control" id="sorting" name="sorting">
               <option value="popular">Сначала популярное</option>
-              <option value=" price">По цене</option>
-              <option value="кумшуцы">По отзывам</option>
             </select>
             <button class="visually-hidden" type="submit">Отсортировать продукты</button>
           </form>
@@ -165,8 +168,7 @@
           <ul class="product-list">
               <li class="product-card">
               <img class="product-card-image" src="" alt="">
-              <button class="button" type="submit">Показать</button>
-            </a>
+              <button class="button" type="button">Показать</button>
             <b class="product-card-name">Любительская селфи-палка</b>
             <b class="product-card-price">500₽</b>
                 </li>
@@ -174,22 +176,22 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="" alt="">
                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+               <b class="product-card-price">1 500 ₽</b> 
               </a>
-              <b class="product-card-price">1 500 ₽</b>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="" alt="">
                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                <b class="product-card-price">2 500 ₽</b>
               </a>
-              <b class="product-card-price">2 500 ₽</b>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="" alt="">
                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+               <b class="product-card-price">4 900 ₽</b> 
               </a>
-              <b class="product-card-price">4 900 ₽</b>
             </li>
           </ul>
           <button class="button pagination-show-more" type="button">Загрузить еще</button>
@@ -226,27 +228,28 @@
 
     <footer class="page-footer">
         <section class="footer-contacts">
+          <a href="#">
           <img class="footer-contacts-logo" src="" alt="Логотип">
-        </section>
+          </a>
         <p>Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
-  
+        </section>
         <section class="newsletter">
           <h2 class="page-footer-title">Сервисы</h2>
           <ul>
-            <li>Доставка</li>
-            <li>Гарантии</li>
-            <li>Контакты</li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </section>
   
         <section class="footer-social">
+          <a href="#">
           <h2 class="page-footer-title">Тел</h2>
-        </section>
-
-        <section class="footer-social">
+          </a>
+        
           <h2 class="page-footer-title">соц сети</h2>
-        </section>
+
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
@@ -264,7 +267,7 @@
             </a>
           </li>
         </ul>
-
+        </section>
         <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
       </footer>
 

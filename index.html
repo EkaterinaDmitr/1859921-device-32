@@ -7,7 +7,7 @@
   <body>
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
+          <a class="navigation-logo">
             <img class="page-header-logo" alt="Логотип Девайс" src="">
           </a>
         </nav>
@@ -49,7 +49,7 @@
       </header>
       <main class="main-index">  
         <section class="slider">
-          <span class="visually-hidden"Фотогалерея</span>
+          <span class="visually-hidden">Фотогалерея</span>
           <img class="slider-image" src="" alt="Товары" >
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
@@ -57,17 +57,13 @@
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
-        </section>
-        <section>
-          <dl>
-            <dt>Порхает как бабочка,
-              жалит как пчела! 
-            </dt>
-              <dd>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-              </dd> 
-          </dl>
+            <h2>Порхает как бабочка, жалит как пчела! 
+            </h2>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          </p> 
+
           <a class="button button-all" href="#">Подробнее</a>
-          <ol class="slider-pagination">
+          <ul class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
                 <span class="visually-hidden">1 фото</span>
@@ -83,65 +79,81 @@
                 <span class="visually-hidden">3 фото</span>
               </button>
             </li>
-          </ol>
-          <table>
-            <tr>
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr>
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
-            </tr>
-          </table>
+          </ul>
+          <dl>
+            <dt>800 м</dt> 
+            <dd>Дальность полет</dd>           
+            <dt>50 м</dt>           
+            <dd>Радиус поражения</dd>           
+            </dl>
         </section>
+
         <section class="categories">
           <ul class="categories-table">
-            <li><a href="#"></a>фото</li>
-            <li>Виртуальная
-              реальность</li>
-          </ul>
-          <ul class="categories-table">
-            <li><a href="#"></a>фото</li>
-            <li>Моноподы 
-              для селфи</li>
-          </ul>
-          <ul class="categories-table">
-            <li><a href="#"></a>фото</li>
-            <li>Экшн-камеры</li>
-          </ul>
-          <ul class="categories-table">
-            <li><a href="#"></a>фото</li>
-            <li>Фитнес-браслеты</li>
-          </ul>
-          <ul class="categories-table">
-            <li><a href="#"></a>фото</li>
-            <li>Умные часы</li>
-          </ul>
-          <ul class="categories-table">
-            <li><a href="#"></a>фото</li>
-            <li>Квадрокоптеры</li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Виртуальная реальность">
+                <p>Виртуальная реальность</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Моноподы для селфи">
+                <p>Моноподы для селфи</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Экшн-камеры">
+                <p>Экшн-камеры</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Фитнес-браслеты">
+                <p>Фитнес-браслеты</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Умные часы">
+                <p>Умные часы</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="#" alt="Квадрокоптеры">
+                <p>Квадрокоптеры</p>
+              </a>
+            </li>
           </ul>
         </section>
         <section class="conditions"> 
           <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Кредит</a></li>
           </ul>
-          <table>
-            <tr>
-              <td> Доставка</td>
-              <td>Мы с удовольствием доставим ваш товар прямо
+              <h2> Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
-              </td>
-            </tr>
-          </table>
+              </p>
           <img scr="illustration-delivery1.png">
         </section>
-        <section class="about.firm">
-            <h2 class="cabout.firm-title">О нас</h2>
+        
+        <section class="delivery">
+          <a href="#">
+            <img src="#">
+          </a>
+          <h2>Доставим редкий товар под заказ</h2>
+          <button class="info" type="button">
+            <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+          </button>
+        </section>
+
+        <section class="aboutfirm">
+            <h2 class="caboutfirm-title">О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
             <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
@@ -151,7 +163,7 @@
               <li>СДИК</li>
               <li>ТоксБерри</li>
             </ul>
-            <button class="about"> <a href=#></a>Подробнее о нас</button>
+           <a href=#>Подробнее о нас </a>
           </section>
 
 
@@ -171,7 +183,7 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <button class="write to us"> <a href=#></a>Напишите нам</button>
+            <a href=#>Напишите нам </a>
         </section>
         <section class="mailing">
           
@@ -201,9 +213,9 @@
           <section class="newsletter">
             <h2 class="page-footer-title">Сервисы</h2>
             <ul>
-              <li>Доставка</li>
-              <li>Гарантии</li>
-              <li>Контакты</li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
             </ul>
           </section>
     
