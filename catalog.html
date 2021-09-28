@@ -15,7 +15,9 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <span class="visually-hidden"> Поиск </span>
-              <input type="submit" value="Поиск по сайту">
+              <form action="#">
+                <input type="submit" value="Поиск по сайту">
+              </form>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href=#>Войти</a>
@@ -166,11 +168,13 @@
           </a>
 
           <ul class="product-list">
-              <li class="product-card">
-              <img class="product-card-image" src="" alt="">
-              <button class="button" type="button">Показать</button>
-            <b class="product-card-name">Любительская селфи-палка</b>
-            <b class="product-card-price">500₽</b>
+            <li class="product-card">
+                <img class="product-card-image" src="" alt="">
+                <button class="button" type="button">Показать</button>
+                <a class="product-card-link" href="#">
+                  <b class="product-card-name">Любительская селфи-палка</b>
+                  <b class="product-card-price">500₽</b>
+              </a>
                 </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -244,10 +248,9 @@
         </section>
   
         <section class="footer-social">
-          <a href="#">
           <h2 class="page-footer-title">Тел</h2>
-          </a>
-        
+          <a class="contacts-phone" href="tel:88121212">+7 (812) 812-12-12</a>
+          
           <h2 class="page-footer-title">соц сети</h2>
 
         <ul class="footer-social-list">
