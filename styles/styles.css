@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  color: #000000;
+  background-color: #FFFFFF;
+  
+}
+
+.page-header {
+  color:#000000;
+  background: #FFFFFF;
+}
+
+.page-footer {
+  background: #242424;
+
+}
+.page-header  {
+  background: #FFE17F;
+}
+.mailing{
+  background: #F0F0F0;
+}
+.delivery {
+  background: #F0F0F0;
+}
+.slider-container-services{
+  background: #F0F0F0;
+}
