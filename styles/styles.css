@@ -1,53 +1,73 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("fonts/rubik.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("fonts/rubik.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/rubik.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
   font-style: italic;
   font-weight: 400;
-  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  src: url("fonts/rubik.woff2") format("woff2");
 }
 
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "Rubik";
   font-style: italic;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+  src: url("fonts/rubik.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Rubik", "Verdana", sans-serif;
   font-size: 18px;
-  line-height: 50px;
+  line-height: 30px;
   color: #000000;
   background-color: #FFFFFF;
   
+  
 }
-
+h2{
+  font-size: 50px;
+  font-style: extrabold;
+}
+h3{
+  font-size: 24px;
+  font-style: bold;
+}
 .page-header {
   color:#000000;
   background: #FFFFFF;
+  
 }
-
-.page-footer {
+footer{
+  color: #FFFFFF; 
   background: #242424;
-
 }
+.contacts-phone {
+  color: #FFFFFF; 
+}
+
 .page-header  {
   background: #FFE17F;
 }
@@ -60,3 +80,33 @@ body {
 .slider-container-services{
   background: #F0F0F0;
 }
+.navigation-link{
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-item{
+  font-size: 16px;
+  font-style: regular;
+  text-decoration: none;
+   
+}
+
+.categories{
+  font-family: "Raleway";
+  font-size: 18px;
+  font-style: extrabold;
+  color: #000000;
+  text-decoration: none;
+}
+dt{
+  font-size: 36px;
+  font-style: regular;
+  
+}
+dd{
+  font-size: 18px;
+  font-style: extrabold;
+  
+}
+
