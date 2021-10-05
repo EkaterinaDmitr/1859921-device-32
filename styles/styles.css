@@ -2,7 +2,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/rubik.woff2") format("woff2");
+  src: url("fonts/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/rubik.woff2") format("woff2");
+  src: url("fonts/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 800;
-    src: url("fonts/rubik.woff2") format("woff2");
+    src: url("fonts/rubik-800.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -26,7 +26,7 @@
   font-family: "Rubik";
   font-style: italic;
   font-weight: 400;
-  src: url("fonts/rubik.woff2") format("woff2");
+  src: url("fonts/rubik-400.woff2") format("woff2");
 }
 
 
@@ -34,7 +34,7 @@
   font-family: "Rubik";
   font-style: italic;
   font-weight: 700;
-  src: url("fonts/rubik.woff2") format("woff2");
+  src: url("fonts/rubik.-700woff2") format("woff2");
   font-display: swap;
 }
 
@@ -43,70 +43,168 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  background-color: #FFFFFF;
-  
-  
+  background-color: #FFFFFF; 
 }
-h2{
-  font-size: 50px;
-  font-style: extrabold;
-}
-h3{
-  font-size: 24px;
-  font-style: bold;
+a {
+  text-decoration: none;  
 }
 .page-header {
   color:#000000;
-  background: #FFFFFF;
-  
-}
-footer{
-  color: #FFFFFF; 
-  background: #242424;
-}
-.contacts-phone {
-  color: #FFFFFF; 
-}
-
-.page-header  {
   background: #FFE17F;
 }
-.mailing{
+
+.navigation-link {
+  color:#000000;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;  
+  
+}
+.slider-container {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+.slide_text h2 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #000000;
+}
+.button-all {
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none; 
+  color: #000000;
+}
+.meaning {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+}
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; 
+  color: #444444;
+}
+
+.categories-table-element {
+  font-family: "Raleway", "Verdana", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  color:#000000; 
+  background: #FFFFFF;
+}
+.slider-container-services {
   background: #F0F0F0;
+}
+
+.slider-services {
+color: #444444;
+font-size: 18px;
+
+}
+.service-delivery {
+  color: #FFE17F;
+  font-weight: 800; 
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.service-guarantee {
+  color: #000000;
+  font-weight: 800; 
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+}
+.service-credit {
+  color: #000000;
+  font-weight: 800; 
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 .delivery {
   background: #F0F0F0;
 }
-.slider-container-services{
+
+.aboutfirm {
+  color: #444444;
+  font-size: 18px;
+  line-height: 30px;
+}
+.aboutfirm a {
+  font-family: "Raleway", "Verdana", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.aboutfirm-title{
+  color: #000000;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+.contacts{
+  color: #444444;
+  font-size: 18px;
+  line-height: 30px;
+}
+.contacts a{
+  font-family: "Raleway", "Verdana", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+
+}
+.contacts-title{
+  color: #000000;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+.transport-company{
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.mailing{
+  color: #444444;
   background: #F0F0F0;
+  font-size: 18px;
+  line-height: 30px;
 }
-.navigation-link{
+.mailing h2{
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
   color: #000000;
-  text-decoration: none;
 }
 
-.navigation-item{
+
+
+.page-footer {
+  font-weight: 400;
   font-size: 16px;
-  font-style: regular;
-  text-decoration: none;
-   
+  line-height: 19px;
+  color: #FFFFFF; 
+  background: #242424;
 }
-
-.categories{
-  font-family: "Raleway";
+.footer-servises{
+  text-transform: uppercase;
+  font-weight: 800;
   font-size: 18px;
-  font-style: extrabold;
-  color: #000000;
-  text-decoration: none;
+  line-height: 21px;
 }
-dt{
-  font-size: 36px;
-  font-style: regular;
-  
-}
-dd{
-  font-size: 18px;
-  font-style: extrabold;
-  
-}
-

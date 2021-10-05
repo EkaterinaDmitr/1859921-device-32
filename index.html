@@ -12,6 +12,7 @@
             <img class="page-header-logo" alt="Логотип Девайс" src="images/logo-device.svg" width="145" height="36">
           </a>
         </nav>
+        <div class="custom-menu">
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
@@ -29,10 +30,11 @@
               <li class="navigation-item">
                 <a class="navigation-link" href=#>
                   <img alt="Корзина" src="images/cart.svg" width="16" height="14">Корзина</a>
-                
               </li>
             </ul>
           </nav>
+        </div>
+        <div class="main-menu">
           <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-link">
@@ -50,9 +52,10 @@
             </li>
           </ul>
         </nav>
+      </div>
       </header>
-      <main class="main-index"> 
 
+      <main class="main-index"> 
       <div class="slider-container">
         <div class="slide_bg"> 
           <div class="slide-content">   
@@ -69,7 +72,7 @@
             </h2>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p> 
-          <a class="button button-all" href="#">Подробнее</a>
+          <a class="button-all" href="#">Подробнее</a>
           <ul class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -88,67 +91,79 @@
             </li>
           </ul>
                 <dl>
-                  <dt>800 м</dt> 
-                  <dd>Дальность полет</dd>           
-                  <dt>50 м</dt>           
-                  <dd>Радиус поражения</dd>           
-                  </dl>
+                  <dt class="meaning">800 м</dt> 
+                  <dd class="description">Дальность полет</dd>           
+                  <dt class="meaning">50 м</dt>           
+                  <dd class="description">Радиус поражения</dd>           
+                </dl>
 
                   </div>
               </div>
             </div>
         </div>
      
-
         <section class="categories">
           <ul class="categories-table">
             <li>
               <a href="#">
                 <img src="images/popular-1.svg" alt="Виртуальная реальность">
-                <p>Виртуальная реальность</p>
+                <p class="categories-table-element"> Виртуальная реальность</p>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="images/popular-2.svg" alt="Моноподы для селфи">
-                <p>Моноподы для селфи</p>
+                <p class="categories-table-element">Моноподы для селфи</p>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="images/popular-3.svg" alt="Экшн-камеры">
-                <p>Экшн-камеры</p>
+                <p class="categories-table-element">Экшн-камеры</p>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="images/popular-4.svg" alt="Фитнес-браслеты">
-                <p>Фитнес-браслеты</p>
+                <p class="categories-table-element">Фитнес-браслеты</p>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="images/popular-5.svg" alt="Умные часы">
-                <p>Умные часы</p>
+                <p class="categories-table-element">Умные часы</p>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="images/popular-6.svg" alt="Квадрокоптеры">
-                <p>Квадрокоптеры</p>
+                <p class="categories-table-element">Квадрокоптеры</p>
               </a>
             </li>
           </ul>
         </section>
+
       <section class="services"> 
-        
+    
         <div class="slider-container-services">
         
-          <div class="slider-_services">
+          <div class="slider-services">
           <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
+            <li>
+              <a href="#">
+                <p class="service-delivery">Доставка</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="service-guarantee">Гарантия</p> 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="service-credit"> Кредит</p>
+              </a>
+            </li>
           </ul>
           </div>
           <div class="slide_text">
@@ -161,6 +176,7 @@
           </div>
         </div>
         </section>
+
         <section class="delivery">
           <a href="#">
             <img src="images/delivery-1.svg" >
@@ -172,13 +188,13 @@
         </section>
 
         <section class="aboutfirm">
-            <h2 class="caboutfirm-title">О нас</h2>
+            <h2 class="aboutfirm-title">О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
             <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
             </p>
-            <ul>
-              <li>Меловые линии</li>
+            <ul class="transport-company">
+              <li >Меловые линии</li>
               <li>СДИК</li>
               <li>ТоксБерри</li>
             </ul>
@@ -206,10 +222,8 @@
         </section>
         <section class="mailing">
           
-            <h2>Подпишитесь
-              на рассылку</h2>
-              <p>Еженедельный дайджест с обзорами новинок,
-                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <h2>Подпишитесь на рассылку</h2>
+              <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
 
@@ -233,10 +247,10 @@
           </section>
           <section class="newsletter">
             <h2 class="page-footer-title">Сервисы</h2>
-            <ul>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантии</a></li>
-              <li><a href="#">Контакты</a></li>
+            <ul >
+              <li class="footer-servises"><a href="#">Доставка</a></li>
+              <li class="footer-servises"><a href="#">Гарантии</a></li>
+              <li class="footer-servises"><a href="#">Контакты</a></li>
             </ul>
           </section>
     
