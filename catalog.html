@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
         <nav class="navigation">
             <a class="navigation-logo" href="index.html">
-              <img class="page-header-logo" alt="Логотип Девайс" src="">
+              <img class="page-header-logo" alt="Логотип Девайс" src="images/logo-device.svg" width="145" height="36">
             </a>
         </nav>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <span class="visually-hidden"> Поиск </span>
-              <form action="#">
-                <input type="search" value="Поиск по сайту">
-              </form>
+              <a class="navigation-link" href=#>
+                <img alt="Поиск по сайту" src="images/search.svg" width="16" height="16">Поиск по сайту</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href=#>Войти</a>
+              <a class="navigation-link" href=#>
+                <img alt="Войти" src="images/come-in.svg" width="13" height="12">Войти</a>                
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href=#>Сравнить</a>
+              <a class="navigation-link" href=#>
+                <img alt="Сравнить" src="images/compare.svg" width="10" height="12">Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href=#>Корзина</a>
+              <a class="navigation-link" href=#>
+                <img alt="Корзина" src="images/cart.svg" width="16" height="14">Корзина</a>
+              
             </li>
           </ul>
         </nav>
@@ -169,30 +172,30 @@
 
           <ul class="product-list">
             <li class="product-card">
-              <a class="product-card-link" href="#"></a>
-                <img class="product-card-image" src="" alt="">
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/product-1.jpg" alt="Любительская селфи-палка">
                 <button class="button" type="button">Показать</button>                
-                  <b class="product-card-name">Любительская селфи-палка</b>
+                  <h3 class="product-card-name">Любительская селфи-палка</h3>
                   <b class="product-card-price">500₽</b>
               </a>
-                </li>
+            </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
+                <img class="product-card-image" src="images/product-2.jpg" alt="Профессиональная селфи-палка">
                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                <b class="product-card-price">1 500 ₽</b> 
               </a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
+                <img class="product-card-image" src="images/product-3.jpg" alt="Непотопляемая селфи-палка">
                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                 <b class="product-card-price">2 500 ₽</b>
               </a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
+                <img class="product-card-image" src="images/product-4.jpg" alt="Селфи-палка «Следуй за мной»">
                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                <b class="product-card-price">4 900 ₽</b> 
               </a>
@@ -233,7 +236,7 @@
     <footer class="page-footer">
         <section class="footer-contacts">
           <a href="#">
-          <img class="footer-contacts-logo" src="" alt="Логотип">
+          <img class="footer-contacts-logo" src="images/logo-device-footer.svg" alt="Логотип">
           </a>
         <p>Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
@@ -256,16 +259,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
+              <img src="images/facebook.svg" alt="Фейсбук">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="#">
+              <img src="images/instagram.svg" alt="Инстаграм">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="#">
+              <img src="images/twitter.svg" alt="Твиттер">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
