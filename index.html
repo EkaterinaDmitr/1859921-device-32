@@ -55,7 +55,8 @@
       </div>
       </header>
 
-      <main class="main-index"> 
+      <main class="main-container main-index"> 
+        <div class="page-container">
       <div class="slider-container">
         <div class="slide_bg"> 
           <div class="slide-content">   
@@ -67,7 +68,7 @@
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
-          <div class="slide_text">
+          <div class="slide-text">
             <h2>Порхает как бабочка, жалит как пчела! 
             </h2>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -166,7 +167,7 @@
             </li>
           </ul>
           </div>
-          <div class="slide_text">
+          <div class="delivery-text">
               <h2> Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
@@ -187,6 +188,7 @@
           </button>
         </section>
 
+        <div class="about-company">
         <section class="aboutfirm">
             <h2 class="aboutfirm-title">О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -220,24 +222,32 @@
           </ul>
             <a href=#>Напишите нам </a>
         </section>
-        <section class="mailing">
-          
+      </div>
+       
+      <section class="mailing">
+          <div class="mailing-send">
             <h2>Подпишитесь на рассылку</h2>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <p class="newsletter-email">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              </p>
+            </div>
+            <div class="subscription">
               <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
-                <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-
-                  <p class="newsletter-email">
-                    <label class="visually-hidden" for="newsletter-email">Email</label>
-                    <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-                  </p>
+                
                   <button class="button" type="submit">Подписаться</button>
                 </form>
                 <img src="images/tick-big-1.svg" alt="Это бесплатно">
                 <p>Это бесплатно</p>
+              </div>
         </section>
+      </div>
+      <footer class="page-footer">
+      <div class="page-footer-container">
         
-        <footer class="page-footer">
           <section class="footer-contacts">
             <a href="#">
             <img class="footer-contacts-logo" src="images/logo-device-footer.svg" alt="Логотип">
@@ -280,8 +290,10 @@
               </a>
             </li>
           </ul>
-          </section>
+          
           <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+          </section>
+        </div>
         </footer>
 
 
