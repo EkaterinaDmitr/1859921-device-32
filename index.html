@@ -37,17 +37,17 @@
         <div class="main-menu">
           <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Каталог товаров</a>
                 <img alt="плюс" src="images/plus-1.svg" width="50" height="50"></a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Доставка</a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Гарантия</a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Контакты</a>
             </li>
           </ul>
@@ -58,14 +58,15 @@
       <main class="main-container main-index"> 
         <div class="page-container">
       <div class="slider-container">
-        <div class="slide_bg"> 
           <div class="slide-content">   
           <span class="visually-hidden">Фотогалерея</span>
-          <img class="slider-image" src="images/slider-1.png" alt="Товары" width="560" height="560">
           <button class="slider-button slider-prev" type="button">
+            <img class="previous-photo" src="images/arrow.svg" alt="Предыдущее фото" >
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
+          <img class="slider-image" src="images/slider-1.png" alt="Товары" width="560" height="560">
           <button class="slider-button slider-next" type="button">
+            <img class="next-photo" src="images/arrow.svg" alt="Следующее фото" >
             <span class="visually-hidden">Следующее фото</span>
           </button>
           <div class="slide-text">
@@ -100,42 +101,44 @@
 
                   </div>
               </div>
-            </div>
+          
         </div>
      
         <section class="categories">
           <ul class="categories-table">
-            <li>
+            
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-1.svg" alt="Виртуальная реальность">
                 <p class="categories-table-element"> Виртуальная реальность</p>
               </a>
-            </li>
-            <li>
+            </li >
+            
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-2.svg" alt="Моноподы для селфи">
                 <p class="categories-table-element">Моноподы для селфи</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-3.svg" alt="Экшн-камеры">
                 <p class="categories-table-element">Экшн-камеры</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-4.svg" alt="Фитнес-браслеты">
                 <p class="categories-table-element">Фитнес-браслеты</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-5.svg" alt="Умные часы">
                 <p class="categories-table-element">Умные часы</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-6.svg" alt="Квадрокоптеры">
                 <p class="categories-table-element">Квадрокоптеры</p>
@@ -173,8 +176,9 @@
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
+            </div>
               <img src="images/delivery-2.svg" width="136" height="164">
-          </div>
+          
         </div>
         </section>
 

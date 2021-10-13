@@ -6,50 +6,54 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+      <header class="page-header">
         <nav class="navigation">
-            <a class="navigation-logo" href="index.html">
-              <img class="page-header-logo" alt="Логотип Девайс" src="images/logo-device.svg" width="145" height="36">
-            </a>
+          <a class="navigation-logo">
+            <img class="page-header-logo" alt="Логотип Девайс" src="images/logo-device.svg" width="145" height="36">
+          </a>
         </nav>
-        <nav class="navigation">
+        <div class="custom-menu">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href=#>
+                  <img alt="Поиск по сайту" src="images/search.svg" width="16" height="16">Поиск по сайту</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href=#>
+                  <img alt="Войти" src="images/come-in.svg" width="13" height="12">Войти</a>                
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href=#>
+                  <img alt="Сравнить" src="images/compare.svg" width="10" height="12">Сравнить</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href=#>
+                  <img alt="Корзина" src="images/cart.svg" width="16" height="14">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-menu">
+          <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href=#>
-                <img alt="Поиск по сайту" src="images/search.svg" width="16" height="16">Поиск по сайту</a>
+              <a class="navigation-link" href=#>Каталог товаров</a>
+                <img alt="плюс" src="images/plus-1.svg" width="50" height="50"></a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href=#>
-                <img alt="Войти" src="images/come-in.svg" width="13" height="12">Войти</a>                
+              <a class="navigation-link" href=#>Доставка</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href=#>
-                <img alt="Сравнить" src="images/compare.svg" width="10" height="12">Сравнить</a>
+              <a class="navigation-link" href=#>Гарантия</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href=#>
-                <img alt="Корзина" src="images/cart.svg" width="16" height="14">Корзина</a>
-              
+              <a class="navigation-link" href=#>Контакты</a>
             </li>
           </ul>
         </nav>
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-link">
-                    <a class="navigation-link" href=#>Каталог товаров</a>
-                </li>
-                <li class="navigation-link">
-                    <a class="navigation-link" href=#>Доставка</a>
-                </li>
-                <li class="navigation-link">
-                    <a class="navigation-link" href=#>Гарантия</a>
-                </li>
-                <li class="navigation-link">
-                    <a class="navigation-link" href=#>Контакты</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+      </header>
     
     <main class="main-inner">
         <header class="inner-header">
@@ -66,9 +70,9 @@
                 </li>
               </ul>
           </header>
-          
+    <div class="filter-sorting">     
           <section class="catalog-products">
-  <div class="filter-sorting">
+ 
             <h2 class="visually-hidden">Фильтр</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
@@ -155,7 +159,7 @@
               <button class="button" type="submit">Показать</button>
             </form>
           </section>
-          <section class="sorting">
+          <div class="catalog-right-column">   
           <form class="sorting-type">
 
             <h2>Сортировка</h2>
@@ -170,7 +174,7 @@
           <a href="#" class="button">
             <span class="visually-hidden">По убыванию</span>
           </a>
-
+       
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -231,9 +235,9 @@
               </a>
             </li>
           </ul> 
-        </div>
+        
         </section>
-       
+       </div>
     </main>
 
     <footer class="page-footer">
