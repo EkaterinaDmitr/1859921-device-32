@@ -43,7 +43,7 @@ html{
 }
 body {
   margin: 0 auto;
-  width: 1440px;
+  min-width: 1440px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -58,7 +58,8 @@ body {
   flex-grow: 1;
 }
 .main-inner { 
-   flex-grow: 1;
+   
+   width: 1440px;
 }
 
 a {
@@ -207,7 +208,7 @@ a {
 
 .services{
   background: #F0F0F0;
-  width: 1440px;
+  
 }
 .slider-services {
 color: #444444;
@@ -319,7 +320,7 @@ font-size: 18px;
   line-height: 30px;
   display: flex;
   flex-direction:row;
-  width: 1440px;
+  
   
 }
 .page-mailing{
@@ -409,5 +410,6 @@ width: 250px;
 .product-list{
   display: flex;
   width: 760px;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
