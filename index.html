@@ -37,17 +37,17 @@
         <div class="main-menu">
           <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Каталог товаров</a>
                 <img alt="плюс" src="images/plus-1.svg" width="50" height="50"></a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Доставка</a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Гарантия</a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href=#>Контакты</a>
             </li>
           </ul>
@@ -55,19 +55,21 @@
       </div>
       </header>
 
-      <main class="main-index"> 
+      <main class="main-container main-index"> 
+       
       <div class="slider-container">
-        <div class="slide_bg"> 
           <div class="slide-content">   
           <span class="visually-hidden">Фотогалерея</span>
-          <img class="slider-image" src="images/slider-1.png" alt="Товары" width="560" height="560">
           <button class="slider-button slider-prev" type="button">
+            <img class="previous-photo" src="images/arrow.svg" alt="Предыдущее фото" >
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
+          <img class="slider-image" src="images/slider-1.png" alt="Товары" width="560" height="560">
           <button class="slider-button slider-next" type="button">
+            <img class="next-photo" src="images/arrow.svg" alt="Следующее фото" >
             <span class="visually-hidden">Следующее фото</span>
           </button>
-          <div class="slide_text">
+          <div class="slide-text">
             <h2>Порхает как бабочка, жалит как пчела! 
             </h2>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
@@ -99,52 +101,56 @@
 
                   </div>
               </div>
-            </div>
+          
         </div>
      
         <section class="categories">
+          <div class="page-categories">
           <ul class="categories-table">
-            <li>
+            
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-1.svg" alt="Виртуальная реальность">
                 <p class="categories-table-element"> Виртуальная реальность</p>
               </a>
-            </li>
-            <li>
+            </li >
+            
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-2.svg" alt="Моноподы для селфи">
                 <p class="categories-table-element">Моноподы для селфи</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-3.svg" alt="Экшн-камеры">
                 <p class="categories-table-element">Экшн-камеры</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-4.svg" alt="Фитнес-браслеты">
                 <p class="categories-table-element">Фитнес-браслеты</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-5.svg" alt="Умные часы">
                 <p class="categories-table-element">Умные часы</p>
               </a>
             </li>
-            <li>
+            <li class="categories-popular">
               <a href="#">
                 <img src="images/popular-6.svg" alt="Квадрокоптеры">
                 <p class="categories-table-element">Квадрокоптеры</p>
               </a>
             </li>
           </ul>
+        </div>
         </section>
 
       <section class="services"> 
-    
+        <div class="page-services-container">
         <div class="slider-container-services">
         
           <div class="slider-services">
@@ -166,17 +172,19 @@
             </li>
           </ul>
           </div>
-          <div class="slide_text">
+          <div class="delivery-text">
               <h2> Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
+            </div>
               <img src="images/delivery-2.svg" width="136" height="164">
-          </div>
+          
+        </div>
         </div>
         </section>
-
+<div class="page-delivery">
         <section class="delivery">
           <a href="#">
             <img src="images/delivery-1.svg" >
@@ -187,6 +195,7 @@
           </button>
         </section>
 
+        <div class="about-company">
         <section class="aboutfirm">
             <h2 class="aboutfirm-title">О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
@@ -220,24 +229,35 @@
           </ul>
             <a href=#>Напишите нам </a>
         </section>
-        <section class="mailing">
-          
+      </div>
+    </div>
+      <section class="mailing">
+        <div class="page-mailing">
+          <div class="mailing-send">
             <h2>Подпишитесь на рассылку</h2>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <p class="newsletter-email">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              </p>
+            </div>
+            <div class="subscription">
               <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
-                <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-
-                  <p class="newsletter-email">
-                    <label class="visually-hidden" for="newsletter-email">Email</label>
-                    <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-                  </p>
+                
                   <button class="button" type="submit">Подписаться</button>
                 </form>
                 <img src="images/tick-big-1.svg" alt="Это бесплатно">
                 <p>Это бесплатно</p>
+              </div>
+              </div>
         </section>
+      </div>
+      
+      <footer class="page-footer">
+      <div class="page-footer-container">
         
-        <footer class="page-footer">
           <section class="footer-contacts">
             <a href="#">
             <img class="footer-contacts-logo" src="images/logo-device-footer.svg" alt="Логотип">
@@ -280,8 +300,10 @@
               </a>
             </li>
           </ul>
-          </section>
+          
           <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+          </section>
+        </div>
         </footer>
 
 
