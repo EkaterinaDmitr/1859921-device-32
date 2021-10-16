@@ -43,7 +43,7 @@ html{
 }
 body {
   margin: 0 auto;
-  min-width: 1440px;
+  min-width: 1160px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -59,7 +59,8 @@ body {
 }
 .main-inner { 
    
-   width: 1440px;
+   width: 1160px;
+   margin: 0 auto;
 }
 
 a {
@@ -394,6 +395,9 @@ width: 250px;
 }
 .catalog-right-column {
   width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .visually-hidden{
@@ -412,4 +416,9 @@ width: 250px;
   width: 760px;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.product-card {
+  width: calc(100%/2);
+  list-style: none;
 }
