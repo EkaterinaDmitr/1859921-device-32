@@ -73,7 +73,7 @@
     <div class="filter-sorting">     
           <section class="catalog-products">
  
-            <h2 class="visually-hidden">Фильтр</h2>
+            <h2 class="filter">ФИЛЬТР:</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
@@ -162,25 +162,25 @@
           <div class="catalog-right-column">   
           <form class="sorting-type">
 
-            <h2>Сортировка</h2>
+            <h2 class="sorting-right">СОРТИРОВКА:</h2>
             <select class="select-control" id="sorting" name="sorting">
               <option value="popular">Сначала популярное</option>
             </select>
             <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-          </form>
+          
           <a href="#" class="button button-light">
             <span class="visually-hidden">По возрастанию</span>
           </a>
           <a href="#" class="button">
             <span class="visually-hidden">По убыванию</span>
           </a>
-       
+        </form>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-1.jpg" alt="Любительская селфи-палка">
                 <button class="button" type="button">Показать</button>                
-                  <h3 class="product-card-name">Любительская селфи-палка</h3>
+                  <h3 class="product-card-title">Любительская селфи-палка</h3>
                   <b class="product-card-price">500₽</b>
               </a>
             </li>
@@ -210,9 +210,11 @@
 
           <ul class="pagination">
             <li class="pagination-item">
+              <button class="button-back">
               <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Назад</span>
+                Назад
               </a>
+            </button>
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -230,9 +232,11 @@
               <a class="pagination-link" href="#">15</a>
             </li>
             <li class="pagination-item">
+              <button class="button-forward">
               <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Вперёд</span>
+                Вперёд
               </a>
+            </button>
             </li>
           </ul> 
         
