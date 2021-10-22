@@ -250,6 +250,7 @@ margin-right: 82px;
   /* width: 160px; */
 }
 .description {
+  grid-row: none;
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -421,8 +422,8 @@ margin-right: 240px;
   width: 1160px;
 }
 .product-description{
-display: flex;
-flex-wrap: wrap;
+display: grid;
+
   
 }
 .delivery-text{
@@ -662,13 +663,17 @@ letter-spacing: 0.2em;
 
 .catalog-products {
   display: flex;
-  width: 200px;
   margin-right: 72px;
   justify-content: flex-start;
   flex-direction: column;
   padding-left: 60px;
+  padding-right: 70px;
+}
+.catalog-filter{
+  width: 200px;
 }
 .filter{
+  width: 200px;
   text-transform: uppercase;
   margin: 0;
   padding-top:25px;
