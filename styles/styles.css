@@ -217,13 +217,6 @@ margin-right: 82px;
   width: 560px;
 
 }
-.categories-popular{
-  background: #FFE17F;
-  margin-right: 40px;
-}
-.categories-popular:last-child {
-  margin-right: 0;
-}
 
 .slide-text{
   width: 560px;
@@ -258,16 +251,7 @@ margin-right: 82px;
   color: #444444;
   /* width: 160px; */
 }
-.categories-table{
-  
-  display: flex;
-  flex-direction:row;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
- 
-}
+
 .breadcrumbs{
   display: flex;
   margin: 0;
@@ -327,15 +311,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.categories-table-element {
-  font-family: "Raleway", "Verdana", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  color:#000000; 
-  background: #FFFFFF;
-  
-}
+
 .pagination {
   width: 760px;
   display: flex;
@@ -355,12 +331,6 @@ justify-content: center;
 }
 .pagination-last{
   margin-right: 160px;
-}
-.page-categories{
-  width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  margin-bottom: 70px;
 }
 
 .slider-container-services {
@@ -707,6 +677,7 @@ letter-spacing: 0.2em;
   overflow: hidden;
 }
 .pagination-show-more{
+  margin: 0;
   margin-bottom: 51px;
   padding: 15px;
   border: #F0F0F0 3px solid;
@@ -714,18 +685,59 @@ letter-spacing: 0.2em;
 }
 .product-list{
   padding: 0;
-  display: flex;
+  display: grid;
   width: 760px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  grid-template-columns: 360px 360px;
   margin-bottom: 44px;
+  gap: 40px;
 }
 
 .product-card {
-  width: calc(100%/2);
+
   list-style: none;
+}
+.product-card-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.main-goods__list {
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.main-goods__item-wrap {
+    padding: 0;
+    width: 160px;
+    height: 160px;
+    background-color:#FFE17F;
+    text-align: center;
 }
 
 
-
-
+.main-goods__item-wrap--vr img {
+  width: 97px;
+  height: 55px;
+}
+.main-goods__item-name {
+  width: 160px;
+  margin: 0;
+  padding-top: 33px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Raleway", "Verdana", sans-serif;
+  color: #000;
+  background: #FFFFFF;
+}
+.main-goods:last-child {
+  margin-right: 0;
+}
+.main-goods {
+  margin-bottom: 70px;
+}
