@@ -18,12 +18,17 @@
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item-serch">
+                <form  action="#" method="post"></form>
+                <input class="navigation-item-serch" type="text" name="Поиск по сайту" value="" placeholder="Поиск по сайту">
                 <a class="navigation-link" href=#>
-                  <img class="img-serch" alt="Поиск по сайту" src="images/search.svg" width="16" height="16">Поиск по сайту</a>
+                  <!-- <img class="img-serch" alt="Поиск по сайту" src="images/search.svg" width="16" height="16"> -->
+                  </a>
+                
               </li>
               <li class="navigation-item-enter">
                 <a class="navigation-link" href=#>
-                  <img class="img-enter" alt="Войти" src="images/come-in.svg" width="13" height="12">Войти</a>                
+                  <!-- <img class="img-enter" alt="Войти" src="images/come-in.svg" width="13" height="12"> -->
+                  Войти</a>                
               </li>
               <li class="navigation-item-compare">
                 <a class="navigation-link" href=#>
@@ -61,43 +66,53 @@
 
       <main class="main-container main-index"> 
        
-      <div class="slider-container">
+      <section class="slider-container">
           <div class="slide-content">   
-          <span class="visually-hidden">Фотогалерея</span>
+            <div class= "slider-wrapper">
+            <span class="visually-hidden">Фотогалерея</span>
+            <img class="slider-image" src="images/slider-1.png" alt="Товары" width="560" height="560">
+
+          
+          <div class="slider-controls">
           <button class="slider-button slider-prev" type="button">
             <img class="previous-photo" src="images/arrow.svg" alt="Предыдущее фото" >
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <img class="slider-image" src="images/slider-1.png" alt="Товары" width="560" height="560">
           <button class="slider-button slider-next" type="button">
             <img class="next-photo" src="images/arrow.svg" alt="Следующее фото" >
             <span class="visually-hidden">Следующее фото</span>
           </button>
+        </div>
+      </div>
+        </div>
+        </div>
           <div class="slide-text">
             
             
-            <h2>Порхает как бабочка, жалит как пчела! 
+            <h2 class="slide-text-heading">Порхает как бабочка, жалит как пчела! 
             </h2>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+              <p class="slide-text-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p> 
+              <div class="slider-pagination">
           <a class="button-all" href="#">Подробнее</a>
-          <ul class="slider-pagination">
+          <ol class="slider-pagination-list">
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button " type="button">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button " type="button">
                 <span class="visually-hidden">2 фото</span>
               </button>
             </li>
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button " type="button">
                 <span class="visually-hidden">3 фото</span>
               </button>
             </li>
-          </ul>
+          </ol>
+        </div>
                 <dl class="product-description">
                   <dt class="meaning">800 м</dt> 
                   <dd class="description">Дальность полета</dd>           
@@ -106,9 +121,9 @@
                 </dl>
 
                   </div>
-              </div>
+              
           
-        </div>
+        </section>
      
 
 
@@ -117,48 +132,48 @@
           <ul class="main-goods__list">
             <li class="main-goods__item">
               <a class="main-goods__item-link" href="#">
-                <div class="main-goods__item-wrap  main-goods__item-wrap--vr">
-                  <img class="main-goods__item-img" src="images/popular-1.svg" alt="Очки VR" width="97" height="55">
+                <div class="main-goods__item-wrap">
+                  <img class="main-goods__img-vr" src="images/popular-1.svg" alt="Очки VR" width="97" height="55">
                 </div>
                 <p class="main-goods__item-name">Виртуальная реальность</p>
               </a>
             </li>
             <li class="main-goods__item">
               <a class="main-goods__item-link" href="catalog.html">
-                <div class="main-goods__item-wrap  main-goods__item-wrap--selfie">
-                  <img class="main-goods__item-img" src="images/popular-2.svg" alt="Монопод" width="86" height="117">
+                <div class="main-goods__item-wrap">
+                  <img class="main-goods__img-selfie" src="images/popular-2.svg" alt="Монопод" width="86" height="117">
                 </div>
                 <p class="main-goods__item-name">Моноподы для селфи</p>
               </a>
             </li>
             <li class="main-goods__item">
               <a class="main-goods__item-link" href="#">
-                <div class="main-goods__item-wrap  main-goods__item-wrap--cam">
-                  <img class="main-goods__item-img" src="images/popular-3.svg" alt="Экшн-камера" width="71" height="87">
+                <div class="main-goods__item-wrap">
+                  <img class="main-goods__img-cam" src="images/popular-3.svg" alt="Экшн-камера" width="71" height="87">
                 </div>
                 <p class="main-goods__item-name">Экшн-камеры</p>
               </a>
             </li>
             <li class="main-goods__item">
               <a class="main-goods__item-link" href="#">
-                <div class="main-goods__item-wrap  main-goods__item-wrap--fit">
-                  <img class="main-goods__item-img" src="images/popular-4.svg" alt="Фитнес-браслет" width="107" height="65">
+                <div class="main-goods__item-wrap">
+                  <img class="main-goods__img-fit" src="images/popular-4.svg" alt="Фитнес-браслет" width="107" height="65">
                 </div>
                 <p class="main-goods__item-name">Фитнес-браслеты</p>
               </a>
             </li>
             <li class="main-goods__item">
               <a class="main-goods__item-link" href="#">
-                <div class="main-goods__item-wrap  main-goods__item-wrap--watch">
-                  <img class="main-goods__item-img" src="images/popular-5.svg" alt="Умные часы" width="56" height="98">
+                <div class="main-goods__item-wrap">
+                  <img class="main-goods__img-watch" src="images/popular-5.svg" alt="Умные часы" width="56" height="98">
                 </div>
                 <p class="main-goods__item-name">Умные часы</p>
               </a>
             </li>
             <li class="main-goods__item">
               <a class="main-goods__item-link" href="#">
-                <div class="main-goods__item-wrap  main-goods__item-wrap--copter">
-                  <img class="main-goods__item-img" src="images/popular-6.svg" alt="Квадрокоптер" width="132" height="69">
+                <div class="main-goods__item-wrap">
+                  <img class="main-goods__img-copter" src="images/popular-6.svg" alt="Квадрокоптер" width="132" height="69">
                 </div>
                 <p class="main-goods__item-name">Квадрокоптеры</p>
               </a>
@@ -171,43 +186,49 @@
         <div class="slider-container-services">
         
           <div class="slider-services">
-          <ul>
-            <li>
+          <ul class="slider-services-item">
+            <li class="slider-delivery-link">
               <a href="#">
                 <p class="service-delivery">Доставка</p>
               </a>
             </li>
-            <li>
+            <li class="slider-guarantee-link">
               <a href="#">
                 <p class="service-guarantee">Гарантия</p> 
               </a>
             </li>
-            <li>
+            <li class="slider-credit-link">
               <a href="#">
                 <p class="service-credit"> Кредит</p>
               </a>
             </li>
           </ul>
           </div>
-          <div class="delivery-text">
-              <h2> Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо
+          <div class="delivery-services">
+            <div class="delivery-text">
+              <h2 class="delivery-text-heading"> Доставка</h2>
+              <p class="delivery-text-paragraph">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            
-              <img src="images/delivery-2.svg" width="136" height="164">
+                
+              </p>  
+            </div>
+              <img class="services-delivery-img" src="images/delivery-2.svg" width="136" height="164">
+          
           </div>
+
         </div>
         </div>
         </section>
 <div class="page-delivery">
         <section class="delivery">
+          <div class="delivery-img">
           <a href="#">
-            <img src="images/delivery-1.svg" >
+            <img class="delivery-img-svg" src="images/delivery-1.svg" >
           </a>
-          <h2>Доставим редкий товар под заказ</h2>
-          <button class="info" type="button">
+        </div>
+          <h2 class="delivery-heading-text">Доставим редкий товар под заказ</h2>
+          <button class="info" type="button">i
             <span class="visually-hidden">Посмотреть дополнительную информацию</span>
           </button>
         </section>
@@ -216,16 +237,16 @@
         <section class="aboutfirm">
             <h2 class="aboutfirm-title">О нас</h2>
             <div class="aboutfirm-title-text">
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            <p class="first-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
-            <p>
+            <p class="last-paragraph">
              Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
             </p>
           </div>
             <ul class="transport-company">
-              <li >Меловые линии</li>
-              <li>СДИК</li>
-              <li>ТоксБерри</li>
+              <li class="company-item">Меловые линии</li>
+              <li class="company-item">СДИК</li>
+              <li class="company-item">ТоксБерри</li>
             </ul>
            <a href=#>Подробнее о нас </a>
           </section>
@@ -267,9 +288,7 @@
             <div class="subscription">
               <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
               </p> 
-                <p>
-                  Это бесплатно
-                </p>
+              <p class="mailing-free">Это бесплатно</p>
               </div>
               </div>
         </section>
@@ -301,7 +320,7 @@
             <li class="footer-servises"><a href="#">Контакты</a></li>
           </ul>
 <h2 class="visually-hidden">Тел</h2>
-          <a class="contacts-phone" href="tel:88121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="contacts-phone-footer" href="tel:88121212">Тел.: +7 (812) 812-12-12</a>
         </div>
 <div class="footer-social">
         <h2 class="visually-hidden">соц сети</h2>
