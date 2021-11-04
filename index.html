@@ -15,19 +15,18 @@
           </a>
         </nav>
         <div class="custom-menu">
-          <nav class="navigation">
+           <nav class="navigation">
             <ul class="navigation-list">
-              <li class="navigation-item-serch">
-                <form  action="#" method="post"></form>
-                <input class="navigation-item-serch" type="text" name="Поиск по сайту" value="" placeholder="Поиск по сайту">
-                <a class="navigation-link" href=#>
-                  <!-- <img class="img-serch" alt="Поиск по сайту" src="images/search.svg" width="16" height="16"> -->
-                  </a>
-                
+              <li class="navigation-item-search">
+                <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
+                <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+                <input type="search" class="main-header-search" name="search-input" id="search-form-input" placeholder="Поиск по сайту">
+                <!-- <button type="submit" class="button search-button">Найти</button> -->
+          </form>
               </li>
               <li class="navigation-item-enter">
                 <a class="navigation-link" href=#>
-                  <!-- <img class="img-enter" alt="Войти" src="images/come-in.svg" width="13" height="12"> -->
+                  <img class="img-enter" alt="Войти" src="images/come-in.svg" width="13" height="12">
                   Войти</a>                
               </li>
               <li class="navigation-item-compare">
@@ -35,7 +34,7 @@
                   <img class="img-compare" alt="Сравнить" src="images/compare.svg" width="10" height="12">Сравнить</a>
               </li>
               <li class="navigation-item-basket">
-                <a class="navigation-link" href=#>
+                <a class="navigation-link " href=#>
                   <img class="img-basket" alt="Корзина" src="images/cart.svg" width="16" height="14">Корзина</a>
               </li>
             </ul>
@@ -45,18 +44,17 @@
           <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item-catalog">
-              <a class="navigation-link" href=#>Каталог товаров
-                <img alt="плюс" src="images/plus-1.svg" width="16" height="16">
+              <a class="navigation-link_main_catalog " href=#>Каталог товаров
               </a>
             </li>
             <li class="navigation-item-delivery">
-              <a class="navigation-link" href=#>Доставка</a>
+              <a class="navigation-link_main " href=#>Доставка</a>
             </li>
             <li class="navigation-item-guarantee">
-              <a class="navigation-link" href=#>Гарантия</a>
+              <a class="navigation-link_main " href=#>Гарантия</a>
             </li>
             <li class="navigation-item-contacts">
-              <a class="navigation-link" href=#>Контакты</a>
+              <a class="navigation-link_main " href=#>Контакты</a>
             </li>
           </ul>
         </nav>
@@ -188,19 +186,13 @@
           <div class="slider-services">
           <ul class="slider-services-item">
             <li class="slider-delivery-link">
-              <a href="#">
-                <p class="service-delivery">Доставка</p>
-              </a>
+              <a class="service-delivery" href="#">Доставка</a>
             </li>
             <li class="slider-guarantee-link">
-              <a href="#">
-                <p class="service-guarantee">Гарантия</p> 
-              </a>
+              <a class="service-guarantee" href="#">Гарантия</a>
             </li>
             <li class="slider-credit-link">
-              <a href="#">
-                <p class="service-credit"> Кредит</p>
-              </a>
+              <a class="service-credit" href="#">Кредит</a>
             </li>
           </ul>
           </div>
@@ -222,11 +214,9 @@
         </section>
 <div class="page-delivery">
         <section class="delivery">
-          <div class="delivery-img">
-          <a href="#">
+          <a class="delivery-img" href="#">
             <img class="delivery-img-svg" src="images/delivery-1.svg" >
           </a>
-        </div>
           <h2 class="delivery-heading-text">Доставим редкий товар под заказ</h2>
           <button class="info" type="button">i
             <span class="visually-hidden">Посмотреть дополнительную информацию</span>
@@ -248,13 +238,13 @@
               <li class="company-item">СДИК</li>
               <li class="company-item">ТоксБерри</li>
             </ul>
-           <a href=#>Подробнее о нас </a>
+           <a class="button-all-company" href=#>Подробнее о нас </a>
           </section>
 
 
         <section class="contacts">
           <h2 class="contacts-title">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис. 
+          <p class="contacts-paragraph">Вы можете забрать товар сами, заехав в наш офис. 
             Заодно, сможете проверить работоспособность покупки. 
           </p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -268,29 +258,31 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-            <a class="contacts-a" href=#>Напишите нам </a>
+            <a class="button-all-company" href=#>Напишите нам </a>
         </section>
       </div>
     </div>
+
       <section class="mailing">
         <div class="page-mailing">
-          <div class="mailing-send">
             <h2 class="mailing-send-heading">Подпишитесь на рассылку</h2>
+            <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+            </p> 
+          </div>
+            <div class="mailing-send">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-
               <p class="newsletter-email">
                 <label class="visually-hidden" for="newsletter-email">Email</label>
                 <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-                <button class="button" type="submit">Подписаться</button>
+                <button class="button-mailing" type="submit">Подписаться</button>              
               </p>
+              <p class="mailing-free">Это бесплатно</p>
             </form>
             </div>
-            <div class="subscription">
-              <p class="subscription-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-              </p> 
-              <p class="mailing-free">Это бесплатно</p>
-              </div>
-              </div>
+           
+            
+             
+            
         </section>
       
     </main>
@@ -315,9 +307,9 @@
 
 <h2 class="visually-hidden">Сервисы</h2>
           <ul class="newsletter">
-            <li class="footer-servises"><a href="#">Доставка</a></li>
-            <li class="footer-servises"><a href="#">Гарантии</a></li>
-            <li class="footer-servises"><a href="#">Контакты</a></li>
+            <li ><a class="footer-servises" href="#">Доставка</a></li>
+            <li ><a class="footer-servises" href="#">Гарантии</a></li>
+            <li ><a class="footer-servises" href="#">Контакты</a></li>
           </ul>
 <h2 class="visually-hidden">Тел</h2>
           <a class="contacts-phone-footer" href="tel:88121212">Тел.: +7 (812) 812-12-12</a>
@@ -327,26 +319,28 @@
   
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="button-footer" href="#">
                 <img src="images/facebook.svg" alt="Фейсбук">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="button-footer" href="#">
                 <img src="images/instagram.svg" alt="Инстаграм">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class="button-footer" href="#">
                 <img src="images/twitter.svg" alt="Твиттер">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
           </ul>
           
-          <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+          <p class="about-text">
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+          </p>
           </section>
         </div>
         </footer>
