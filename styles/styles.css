@@ -18,25 +18,10 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 800;
-    src: url("../fonts/rubik-800.woff2") format("woff2");
+    src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
     font-display: swap;
 }
 
-@font-face {
-  font-family: "Rubik";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/rubik-400.woff2") format("woff2");
-}
-
-
-@font-face {
-  font-family: "Rubik";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/rubik.-700woff2") format("woff2");
-  font-display: swap;
-}
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -83,7 +68,7 @@ a {
   flex-direction: column;
   color:#000000;
   background: #FFE17F;
-  min-height: 300px;
+  min-height: 323px;
 }
 
 
@@ -132,8 +117,8 @@ a {
 }
 .slider-card__number {
   position: absolute;
-  top: 270px;
-  right: 410px;
+  top: 293px;
+  right: 430px;
   margin: 0;
   padding: 0;
   font-family: "Rubik", "Arial", sans-serif;
@@ -304,7 +289,7 @@ opacity: 0.6;
     content: "";
     width: 50px;
     top: 0px;
-    left: 284px;
+    right: -51px;
     height: 50px;
     border-radius: 50%;
     display: block;
@@ -369,8 +354,9 @@ opacity: 0.6;
   background: #FFC700;
 }
 .navigation-link_main:hover{
-  padding-bottom: 8px;
-  border-bottom: 2px solid #000000;
+  margin-bottom: 8px;
+  text-decoration: underline solid #000000;
+  text-underline-offset: 8px;
 }
 .navigation-link_main:focus{
 outline: 2px solid #AF4FFF;
@@ -512,31 +498,36 @@ padding: 14px 20px 15px 20px;
   font-family: "Raleway", "Verdana", sans-serif;
   width: 220px;
   position: relative;
+  outline: none;
 }
 .button-all::after{
   display: block;
   position: absolute;
   content: "";
-  width: 220px;
+  width: inherit;
   height: 8px;
   background: #FFE17F;
-  top: 9px;
-  z-index: -1;
+  top: 50%;
+  z-index: -2;
   transform: translateY(-50%);
   transition: height .3s;
 }
 .button-all:hover::after{
-  width: 220px;
   height: 50px;
 }
-/* .button-all:focus::after{
-  width: 220px;
-height: 8px;
-background: #AF4FFF;
-} */
 .button-all:active{
-  color: #00000030;
+  color: #00000060;
 }
+/*  */
+.button-all:focus::after{
+    top: 50%;
+    content: "";
+    display: block;
+    width: inherit;
+    height: 8px;
+    background-color: #AF4FFF;
+  }
+
 .pagination-link{
   cursor: pointer;
   color: #00000060;
@@ -1022,36 +1013,8 @@ margin-top: 97px;
   line-height: 24px;
   text-align: center;
   cursor: pointer;
- 
 }
 
-.button-all-company::before{
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -2px;
-  z-index: -1;
-  width: inherit;
-  height: 8px;
-  margin-top: -5px;
-  background-color: #FFE17F;
-}
-.button-all-company:hover::before{
-  width: 260px;
-  height: 50px;
-  position: absolute;
-  transform: translateY(-50%);
-  transition: height .3s;
-  margin: 0;
-}
-.button-all-company:focus::before{
-  outline: none;
-  content: "";
-  background-color: #AF4FFF;
-}
-.button-all-company:active{
-  color: #00000030;
-}
 
 .aboutfirm {
   color: #444444;
@@ -1107,6 +1070,7 @@ margin-top: 97px;
   text-decoration-line: underline;
 }
 .contacts-phone-footer{
+  height: 27px;
   padding: 3px 15px 5px;
   color: #FFFFFF;
   font-size: 16px;
@@ -1121,7 +1085,6 @@ margin-top: 97px;
 }
 .contacts-phone-footer:focus{
   outline: 2px solid #AF4FFF;
-  box-sizing: border-box;
   border-radius: 25px;
 }
 .contacts-phone-footer:active{
@@ -1290,12 +1253,6 @@ color: #444444;
   content: "";
   background-color:#FFFFFF30;
 }
-/* .button-footer-fb::after{
-  content: url(../images/facebook.svg);
-  position: relative;
-  top: 10px;
-  left: 15px;
-} */
 
 .footer-social-item:hover{
 background-color: #FFC700;
@@ -1307,18 +1264,6 @@ background-color: #FFC700;
     background-color: #FFC700;
 }
 
-/* .button-footer-inst::after{
-  content: url(../images/instagram.svg);
-  position: relative;
-  top: 30%;
-  left: 30%;
-} */
-/* .button-footer-tw::after{
-  content: url(../images/twitter.svg);
-  position: relative;
-  top: 30%;
-  left: 30%;
-} */
 .footer-social__btn {
   display: flex;
   justify-content: center;
@@ -1330,11 +1275,11 @@ background-color: #FFC700;
   border: 5px solid transparent;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 .footer-social__btn:focus {
-  outline: none;
-border-color: #AF4FFF;
-background-color: transparent; 
+  outline: 5px solid #AF4FFF;
+  background-color: transparent;
 }
 
 .footer-social__btn:hover {
@@ -1378,7 +1323,7 @@ fill: rgba(68, 68, 68, 0.3);
   margin: 0 auto;
   justify-content: space-between;
   width: 1160px;
-  
+  align-items: center;
 }
 .footer-social {
 margin-top: 62px;
@@ -1463,7 +1408,7 @@ width: 1160px;
 }
 .footer-servises{
   color: #FFFFFF;
-  padding: 20px 14px 20px 15px;
+  padding: 14px 20px 15px 20px;
 }
 
 .footer-servises:not(:last-child) {
@@ -1474,8 +1419,11 @@ width: 1160px;
   color: #FFC700;
   text-decoration: underline solid #FFC700;
   text-underline-offset: 8px;
-
- 
+  text-decoration-thickness: 2px;
+}
+.footer-servises:focus{
+  outline: 2px solid #AF4FFF;
+  border-radius: 25px;
 }
 .footer-servises:active{
 opacity: 0.3;
@@ -1632,10 +1580,12 @@ letter-spacing: 0.2em;
 .main-goods__item-link:active .main-goods__item-wrap{
   background: #FFC700;
 }
-.main-goods__item:active{
+.main-goods__item:active .main-goods__item-name{
   opacity: 0.3;
 }
-
+.main-goods__item-wrap:active {
+  opacity: 0.3;
+}
 
 .main-goods__item-name {
   width: 160px;
@@ -1692,36 +1642,37 @@ letter-spacing: 0.2em;
 
 
 
-.slider-pagination-item{
-  margin: 0;
-  padding: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid #000000;
-  background-color: #FFFFFF;
+.slider-pagination-button{
+  display: block;
+margin: 0;
+padding: 0;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+cursor: pointer;
+border: 2px solid #000000;
+background-color: #FFFFFF;
+outline: none;
 }
-.slider-pagination-item:first-child{
-  background-color: #000;
+
+.activ-button{
+  background: #000;
 }
-.slider-pagination-item:hover{
-  width: 12px;
-  height: 12px;
-  opacity: 0.6;
+.slider-pagination-button:hover{
+  border: 2px solid #00000060;
 }
-.slider-pagination-item:active{
-  width: 12px;
-  height: 12px;
-  opacity: 0.3;
+.slider-pagination-button:focus{
+  outline: none;
+    border: 2px solid #AF4FFF;
+}
+.slider-pagination-button:active{
+  border: 2px solid #00000030;
 }
 .slider-pagination-item {
   margin-right: 22px;
 }
-.slider-pagination-button{
-  display: none;
-}
-______________________________________
+
+
 
 .filter-wrapper{
   position: relative;
