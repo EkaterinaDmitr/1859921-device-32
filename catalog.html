@@ -136,20 +136,19 @@
                 </ul>
               </fieldset>
               
-              <fieldset class="filter-bluetooth">
-                <legend class="legend-bluetooth">Bluetooth</legend>
-                <ul class="reset-list">
-                  <li class="filter-option">
-                    <input class="filter-input filter-input-radio" type="radio" name="product-group" value="yes" id="filter-yes" checked="">
-                    <label for="filter-yes">Есть</label>
+              <fieldset class="filters__group">
+                <legend class="filters__legend">Bluetooth</legend>
+                <ul class="filters__input-list">
+                  <li class="filters__input-item">
+                    <input class="filters__radio visually-hidden" type="radio" id="radio-bluetooth-true" name="filter-has-bluetooth" value="true" checked>
+                    <label class="filters__label filters__label--radio" for="radio-bluetooth-true">Есть</label>
                   </li>
-                  <li class="filter-option">
-                    <input class="filter-input filter-input-radio" type="radio" name="product-group" value="no" id="filter-no">
-                    <label for="filter-no">Нет</label>
+                  <li class="filters__input-item">
+                    <input class="filters__radio visually-hidden" type="radio" id="radio-bluetooth-false" name="filter-has-bluetooth" value="false">
+                    <label class="filters__label filters__label--radio" for="radio-bluetooth-false">Нет</label>
                   </li>
                 </ul>
               </fieldset>
-
               
               <a class="button-all button-show" type="submit">Показать</a>
             </form>
