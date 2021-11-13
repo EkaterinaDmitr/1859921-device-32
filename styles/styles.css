@@ -683,7 +683,7 @@ display: inline-block;
 position: relative;
 
 }
-.breadcrumbs-item:hover{
+.breadcrumbs-link:hover{
   color: #000000;
 }
 .breadcrumbs-link:focus{
@@ -694,7 +694,9 @@ position: relative;
 }
 .sorting-type{
   display: flex;
+  align-items: center;
   background-color: #EBEBEB;
+  padding-left: 40px;
 }
 .select-control{
   top: 25%;
@@ -801,6 +803,7 @@ justify-content: center;
   align-items: center;
   margin-bottom: 77px;
   background-color: #F0F0F0;
+  margin-left: 40px;
 }
 .pagination-item:not(:last-child) {
   margin-right: 28px;
@@ -1417,6 +1420,7 @@ margin-left: 0;
   display: flex;
 }
 .sorting-right{
+  font-family: "Raleway", "Verdana", sans-serif;
   text-transform: uppercase;
   margin: 0;
   padding-top:25px;
@@ -1428,13 +1432,104 @@ line-height: 19px;
 letter-spacing: 0.2em;
 }
 
+.products-sort__btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.products-sort__btn_up {
+  margin-left: 312px;
+}
+
+.products-sort__btn_up::after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  margin-right: -19px;
+  background-position: 50%;
+  background-image: url(../images/sort-down.svg);
+  transform: rotate(180deg);
+  opacity: 0.3;
+}
+
+.products-sort__btn_up:focus::before {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  outline: 5px solid #AF4FFF;
+}
+
+.products-sort__btn_up:hover:after {
+  opacity: 0.6;
+}
+
+.products-sort__btn_up:active:after {
+  opacity: 1;
+}
+
+.products-sort__btn_up:active::before {
+  content: none;
+}
+
+.products-sort__btn_down::after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  margin-right: -19px;
+  background-position: 50%;
+  background-image: url(../images/sort-down.svg);
+  opacity: 0.3;
+}
+
+.products-sort__btn_down:focus::before {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  outline: 5px solid #AF4FFF;
+}
+
+.products-sort__btn_down:hover:after {
+  opacity: 0.6;
+}
+
+.products-sort__btn_down:active:after {
+  opacity: 1;
+}
+
+.products-sort__btn_down:active::before {
+  content: none;
+}
+
+.products-sort__btn_active:after {
+  opacity: 1;
+}
+
+
+
+
+
 .catalog-products {
   flex-grow: 1;
   flex-basis: 330px;
   color: #000000;
   background-color: #EBEBEB;
   display: flex;
-  margin-right: 72px;
   flex-direction: column;
   padding-left: 60px;
 }
@@ -1471,7 +1566,7 @@ letter-spacing: 0.2em;
   overflow: hidden;
 }
 .pagination-show-more{
-  margin: 0;
+  margin-left: 40px;
   margin-bottom: 51px;
   padding: 15px;
   border: #F0F0F0 3px solid;
@@ -1504,16 +1599,24 @@ border: 3px solid #AF4FFF;
   opacity: 0.3;
 }
 .product-list{
-  padding: 0;
+  padding-left: 40px;
   display: grid;
   grid-template-columns: 360px 360px;
   margin-bottom: 44px;
   gap: 40px;
   margin-top: 70px;
 }
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px;
+  margin: 0 0 40px 0;
+  padding: 0;
+  list-style: none;
+}
 .product-card {
   position: relative;
-    padding-bottom: 5px;
+  padding-bottom: 5px;
   list-style: none;
 }
 .product-card-link{
@@ -1617,6 +1720,9 @@ product-card-image{
   left: calc(50% - 90px);
   display: none;
   width: 180px;
+  height: 40px;
+  background-image: linear-gradient(to bottom, transparent 17px, #FFC700 17px, #FFC700 25px, transparent 25px, transparent);
+
 }
 .button-show::after{
   background-color: #FFC700;
@@ -1894,7 +2000,6 @@ color: #FFFFFF;
 }
 
 .range__bar {
-  top: 2px;
   position: absolute;
   height: 2px;
   background-color: #000000;
@@ -2059,12 +2164,16 @@ color: #FFFFFF;
 .color__input:focus-visible + label {
   color: #af4fff;
 }
+
 .color__input:checked:focus-visible + label:before {
   border: 2px solid #af4fff;
   background: url("../images/tickcolor.svg") 50% 50% no-repeat;
   opacity: 1;
 }
-
+.color__input:focus-visible + label:before {
+  border: 2px solid #af4fff;
+  opacity: 1;
+}
 .filters__group {
   position: relative;
   box-sizing: border-box;
