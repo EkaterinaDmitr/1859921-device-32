@@ -1,3 +1,4 @@
+.DOCTYPE html{}
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -42,7 +43,6 @@ body {
   background-color: #FFFFFF; 
 }
 
-/* header */
 .page-header {
   margin: 0 auto;
   width: 1160px;
@@ -433,6 +433,7 @@ border-radius: 25px;
   margin-right: 36px;
 }
 .navigation-link {
+  text-decoration: none;
   position: relative;
   outline: none;
   color:#000000;
@@ -975,7 +976,7 @@ outline: none;
    
 }
 .delivery-text-paragraph{
-  width: 497px;
+  width: 455px;
   color: #444444;
   margin: 0;
 }
@@ -1676,7 +1677,7 @@ border: 3px solid #AF4FFF;
   ;
   background-position: center;
 }
-product-card-image{
+.product-card-image{
   display: block;
 }
 
@@ -1946,6 +1947,7 @@ outline: none;
 }
 
 .range__bar {
+  width: 127px;
   position: absolute;
   height: 2px;
   background-color: #000000;
