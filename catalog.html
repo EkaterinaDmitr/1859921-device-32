@@ -15,18 +15,18 @@
         </nav>
         <div class="custom-menu">
           <nav class="navigation">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <img class="search-form-button" src="images/search.svg" width="16" height="16" alt="Кнопка Поиск">
+              <input class="main-header-search" type="search" name="search" placeholder="Поиск по сайту" required>
+              <button class="search-form__button" type="submit">Найти</button>
+              <span class="visually-hidden">Кнопка найти</span>
+            </form>
             <ul class="navigation-list">
-              <li class="navigation-item-search">
-                <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
-                  <label class="visually-hidden" for="search-form-input">Поле поиска
-                  </label>
-                    <input type="search" class="main-header-search" name="search-input" id="search-form-input" placeholder="Поиск по сайту">
-                </form>
-              </li>
               <li class="navigation-item-personal">
                 <a class="navigation-link" href="#">
-                  <img class="img-personal" alt="Пользователь"  src="images/come-in.svg"  width="13" height="12">Коля Петухов
-                  </a>         
+                  <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12z" />
+                </svg>Коля Петухов</a>         
               </li>
               <li class="navigation-item-exit">
                 <a class="navigation-link link-exit" href=#>Выйти
@@ -34,15 +34,22 @@
               </li>
               <li class="navigation-item-compare">
                 <a class="navigation-link" href=#>
-                  <img class="img-compare" alt="Сравнить" src="images/compare.svg" width="10" height="12">Сравнить
+                  <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="10" height="12" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 0H4v12h2V0zM2 4H0v8h2V4zm8-1H8v9h2V3z" />
+                </svg>
+                <span class="visually-hidden">Кнопка Сравнить</span>
+                Сравнить
                 </a>
               </li>
               <li class="navigation-item-basket">
                 <a class="navigation-link " href=#>
                   <span class="navigation-basket">2
                   </span>
-                  <img class="img-basket" alt="Корзина" src="images/cart.svg" width="16" height="14">Корзина
-                </a>
+                  <svg class="navigation-list-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8zM8 1.9l2.2 3.2H5.9L8 1.9z" />
+                </svg>
+                <span class="visually-hidden">Кнопка Корзина</span>
+                Корзина </a>
               </li>
             </ul>
           </nav>
@@ -92,8 +99,9 @@
 
           <div class="filter-color">  
             <section class="catalog-products">
-              <h2 class="filter">фильтр:
-              </h2>
+              <div class="filter-form">
+              <h2 class="filter">фильтр:</h2>
+            </div>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                   <fieldset class="filters-catalog__group">
                       <legend class="filters-catalog__title">Стоимость
@@ -105,19 +113,22 @@
                               <span class="visually-hidden">Изменить минимальную цену
                               </span>
                             </button>
+
                             <button class="range__toggle range__toggle_max">
                               <span class="visually-hidden">Изменить максимальную цену
                               </span>
                             </button>
+
+                            
                           </div>
                         </div>
                         <div class="range-inputs">
-                          <label class="range-inputs__label">от 
-                            <input class="range-inputs__input" type="number" value="0" name="min-price">
-                          </label>
-                          <label class="range-inputs__label">до 
-                            <input class="range-inputs__input" type="number" value="5000" name="max-price">
-                          </label>
+                           <input class="range-inputs__input" type="number" value="5000" name="max-price">
+                            <label class="range-inputs__label">до</label> 
+
+                          <input class="range-inputs__input" type="number" value="0" name="min-price">
+                            <label class="range-inputs__label">от</label> 
+                         
                         </div>
                       </div>
                   </fieldset>
@@ -168,8 +179,8 @@
                         </li>
                       </ul>
                   </fieldset>
-                  <a class="button-all button-show" href="#">Показать
-                  </a>
+                  <button class="button-show" type="submit">Показать
+                  </button>
                 </form>
             </section>
 
@@ -201,8 +212,8 @@
                     <a class="product-card-link" href="#">
                       <div class="product-card__picture">
                         <img class="product-card-image" src="images/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                          <span class="button-card button-all ">Подробнее
-                          </span>
+                          <button class="button-card button-show display-now">Подробнее
+                          </button>
                       </div> 
                       <div class="product-card-content"> 
                         <h3 class="product-card-title">Любительская селфи-палка
@@ -217,8 +228,8 @@
                     <a class="product-card-link" href="#">
                       <div class="product-card__picture">
                         <img class="product-card-image" src="images/product-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-                          <span class="button-all button-card">Подробнее
-                          </span>
+                          <button class="button-card button-show">Подробнее
+                          </button>
                         </div> 
                         <div class="product-card-content">  
                           <h3 class="product-card-title">Профессиональная<br> селфи-палка
@@ -233,8 +244,8 @@
                     <a class="product-card-link" href="#">
                       <div class="product-card__picture">
                         <img class="product-card-image" src="images/product-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                          <span class="button-all button-card">Подробнее
-                          </span>
+                          <button class="button-card button-show">Подробнее
+                          </button>
                         </div>   
                         <div class="product-card-content">  
                           <h3 class="product-card-title">Непотопляемая<br> селфи-палка
@@ -249,8 +260,8 @@
                     <a class="product-card-link product-card_new" href="#">
                       <div class="product-card__picture">
                         <img class="product-card-image" src="images/product-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-                          <span class="button-all button-card">Подробнее
-                          </span>
+                          <button class="button-card button-show">Подробнее
+                          </button>
                       </div> 
                       <div class="product-card-content">  
                         <h3 class="product-card-title">Селфи-палка «Следуй за<br> мной»
