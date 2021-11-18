@@ -16,7 +16,6 @@
           <div class="custom-menu">
             <nav class="navigation">
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                <img class="search-form-button" src="images/search.svg" width="16" height="16" alt="Кнопка Поиск">
                 <input class="main-header-search" type="search" name="search" placeholder="Поиск по сайту" required>
                 <button class="search-form__button" type="submit">Найти</button>
               </form>
@@ -432,54 +431,54 @@
           </p>
         </div>
       </footer>
-      <div class="modal-wrapper modal-wrapper_disabled">
-        <section class="modal-window">
-          <h2 class="modal-window__title">Доставка под заказ</h2>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <ul class="delivery-form__list">
-              <li class="delivery-form__item delivery-form__item_name form-input">
-                <label class="form-input__label" for="name">Ваше имя:</label>
-                <div class="form-input__wrapper">
-                  <input class="form-input__input" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
-                </div>
-                <span class="form-input__sign">Пожалуйста, представьтесь</span>
-              </li>
-              <li class="delivery-form__item delivery-form__item_email form-input">
-                <label class="form-input__label" for="e-mail">Ваш e-mail:</label>
-                <div class="form-input__wrapper">
-                  <input class="form-input__input" type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail" required>
-                </div>
-                <span class="form-input__sign">Забавный у вас адрес</span>
-              </li>
-              <li class="delivery-form__item delivery-form__item_product form-input">
-                <label class="form-input__label" for="product-name">Что нужно привезти:</label>
-                <input class="form-input__input" type="text" id="product-name" name="product-name" placeholder="В свободной форме" required>
-              </li>
-              <li class="delivery-form__item delivery-form__item_counter form-counter">
-                <div class="form-counter__title">
-                  <label class="form-counter__label" for="count">Количество:</label>
-                  <div class="form-info">
-                    <span class="visually-hidden">Информация</span>
-                    <p class="form-info__popup">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+        <div class="modal-wrapper modal-wrapper_disabled">
+          <section class="modal-window">
+            <h2 class="modal-window__title">Доставка под заказ</h2>
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <ul class="delivery-form__list">
+                <li class="delivery-form__item delivery-form__item_name form-input">
+                  <label class="form-input__label" for="name">Ваше имя:</label>
+                  <div class="form-input__wrapper">
+                    <input class="form-input__input" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
                   </div>
-                </div>
-                <div class="form-counter__group" tabindex="0">
-                  <button class="form-counter__btn form-counter__btn_minus" type="button">
-                    <span class="visually-hidden">Минус</span>
-                  </button>
-                  <input class="form-counter__input" type="number" id="count" name="count" value="1">
-                  <button class="form-counter__btn form-counter__btn_plus" type="button">
-                    <span class="visually-hidden">Плюс</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
-            <button class="delivery-form__btn button-all" type="submit">Отправить</button>
-            <button class="delivery-form__close" type="button">
-              <span class="visually-hidden">Закрыть</span>
-            </button>
-          </form>
-        </section>
-      </div>  
+                  <span class="form-input__sign">Пожалуйста, представьтесь</span>
+                </li>
+                <li class="delivery-form__item delivery-form__item_email form-input">
+                  <label class="form-input__label" for="e-mail">Ваш e-mail:</label>
+                  <div class="form-input__wrapper">
+                    <input class="form-input__input" type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail" required>
+                  </div>
+                  <span class="form-input__sign">Забавный у вас адрес</span>
+                </li>
+                <li class="delivery-form__item delivery-form__item_product form-input">
+                  <label class="form-input__label" for="product-name">Что нужно привезти:</label>
+                  <input class="form-input__input" type="text" id="product-name" name="product-name" placeholder="В свободной форме" required>
+                </li>
+                <li class="delivery-form__item delivery-form__item_counter form-counter">
+                  <div class="form-counter__title">
+                    <label class="form-counter__label" for="count">Количество:</label>
+                    <div class="form-info">
+                      <span class="visually-hidden">Информация</span>
+                      <p class="form-info__popup">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+                    </div>
+                  </div>
+                  <div class="form-counter__group" tabindex="0">
+                    <button class="form-counter__btn form-counter__btn_minus" type="button">
+                      <span class="visually-hidden">Минус</span>
+                    </button>
+                    <input class="form-counter__input" type="number" id="count" name="count" value="1">
+                    <button class="form-counter__btn form-counter__btn_plus" type="button">
+                      <span class="visually-hidden">Плюс</span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+              <button class="delivery-form__btn button-all" type="submit">Отправить</button>
+              <button class="delivery-form__close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+            </form>
+          </section>
+        </div>  
   </body>
 </html>
