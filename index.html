@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   </head>
   <body>
       <header class="page-header">
@@ -81,8 +82,30 @@
           <div class="main-menu">
             <nav class="navigation">
               <ul class="navigation-list">
-                <li class="navigation-item-catalog">
-                  <a class="navigation-link_main_catalog " href=#>Каталог товаров</a>
+                <li class="navigation-item-catalog navigation-item-catalog-popover">
+                  <a class="navigation-link_main_catalog " href="catalog.html">Каталог товаров</a>
+                  <div class="catalog-popover">
+                    <ul class="subcatalog">
+                      <li class="subcatalog-item">
+                        <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+                      </li>
+                      <li class="subcatalog-item">
+                        <a class="subcatalog-link" href="catalog.html">Моноподы для селфи</a>
+                      </li>
+                      <li class="subcatalog-item">
+                        <a class="subcatalog-link" href="#">Экшн-камеры</a>
+                      </li>
+                      <li class="subcatalog-item">
+                        <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+                      </li>
+                      <li class="subcatalog-item">
+                        <a class="subcatalog-link" href="#">Умные часы</a>
+                      </li>
+                      <li class="subcatalog-item">
+                        <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="navigation-item-delivery">
                   <a class="navigation-link_main " href=#>Доставка</a>
@@ -372,7 +395,7 @@
       <footer class="page-footer">
         <div class="logo-footer">
           <a class="footer-contacts-logo"  href="#">
-            <img class="footer-contacts-logo" src="images/logo-device-footer.svg" alt="Логотип">
+            <img class="footer-contacts-logo" src="images/logo-device-footer.svg" alt="Логотип" width="145" height="36">
           </a>
         </div>
         <div class="page-footer-container">
