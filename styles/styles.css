@@ -764,6 +764,7 @@ body {
 .pagination-link{
   cursor: pointer;
   color: #00000060;
+  text-decoration: none;
 }
 
 .pagination-link:hover{
