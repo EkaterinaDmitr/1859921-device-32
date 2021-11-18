@@ -93,7 +93,6 @@ body {
   margin: 10px 19px 10px 20px;
 } 
 
-
 .search-form {
   display: flex;
   align-items: center;
@@ -101,6 +100,7 @@ body {
   height: 40px;
   margin-left: 19px;
 }
+
 .main-header-search {
   flex-grow: 1;
   box-sizing: border-box;
@@ -108,11 +108,9 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 50px;
-
   font-family: inherit;
   font-size: 16px;
   line-height: 19px;
-
   background-color: #ffe17f;
   background-image: url("../images/search.svg");
   background-position: left 14px top 10px;
@@ -187,7 +185,6 @@ body {
 .navigation-logo{
   cursor: pointer;
   margin-left: 60px; 
-  
 }
 
 .page-header-logo{
@@ -934,7 +931,6 @@ body {
   box-sizing: border-box;
   width: 1160px;
   padding-left: 60px;
-  width: 1160px;
   padding-top: 39px;
   margin: 0 auto;
 }
@@ -952,8 +948,6 @@ body {
 
 .product-card-price{
   color: #000000;
-  font-size: 18px;
-  line-height: 24px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -1617,7 +1611,6 @@ body {
 }
 
 .htmlacademy-link{
-  color: #FFC700;
   margin-right: 140px;
   position: relative;
   display: block;
@@ -1879,8 +1872,6 @@ body {
   margin-left: 70px;
   margin-bottom: 51px;
   padding: 15px 15px 15px 21px;
-  border: #F0F0F0 3px solid;
-  background-color: #FFFFFF;
   cursor: pointer;
   text-transform: uppercase;
   width: 760px;
@@ -2714,7 +2705,6 @@ body {
   z-index: 2;
 }
 
-
 .popover-basket::before {
   position: absolute;
   top: -13px;
@@ -3117,7 +3107,7 @@ body {
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-family: Rubik;
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
